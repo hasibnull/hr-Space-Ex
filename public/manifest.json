@@ -1,0 +1,84 @@
+{
+  "manifest_version": 3,
+  "name": "MySpace - V3 Personal Browser Toolkit & Productivity OS",
+  "short_name": "MySpace",
+  "version": "3.0.0",
+  "description": "Cinematic, minimal, and ultra-powerful personal operating system and browser toolkit for Chrome.",
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "bookmarks",
+    "favicon",
+    "tabs",
+    "activeTab",
+    "scripting",
+    "contextMenus",
+    "sidePanel",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    },
+    "default_title": "Open MySpace Dashboard"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "commands": {
+    "capture-full-page": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "Command+Shift+F"
+      },
+      "description": "Capture Full Page Screenshot"
+    },
+    "capture-visible": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+V",
+        "mac": "Command+Shift+V"
+      },
+      "description": "Capture Visible Viewport"
+    },
+    "save-page": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "Save Page to Web Clipper"
+    },
+    "reader-mode": {
+      "description": "Toggle Distraction-Free Reader Mode (Configure in chrome://extensions/shortcuts)"
+    },
+    "open-side-panel": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P",
+        "mac": "Command+Shift+P"
+      },
+      "description": "Open MySpace Side Panel"
+    },
+    "open-tab-manager": {
+      "description": "Open Tab Manager (Configure in chrome://extensions/shortcuts)"
+    }
+  }
+}
+
